@@ -10,6 +10,7 @@ si aggiungerà in automatico
 3 Recupero il colore preferito
 4 Li unisco
 5 aggiungo il numero 21 alla fine
+6 Metto il risultato in pagina
 */
 
 // 1 Chiedo qual è il nome
@@ -27,9 +28,20 @@ console.log (userSurname)
 const userColor = prompt('Dimmi anche il tuo colore preferito!')
 console.log (userColor)
 
+// Risultato in console log
+
 console.log (
     `
    La tua password è la seguente: ${userName}${userSurname}${userColor}21
 
     `
 )
+
+// Risultato in pagina 
+
+document.getElementById('passwordgenerator').innerHTML = 
+` 
+
+La tua password è la seguente: <strong>${userName}${userSurname}${userColor}21 </strong> 
+
+`
