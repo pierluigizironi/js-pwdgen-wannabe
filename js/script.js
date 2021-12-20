@@ -26,3 +26,10 @@ console.log (userSurname)
 
 const userColor = prompt('Dimmi anche il tuo colore preferito!')
 console.log (userColor)
+
+console.log (
+    `
+   La tua password è la seguente: ${userName}${userSurname}${userColor}21
+
+    `
+)
